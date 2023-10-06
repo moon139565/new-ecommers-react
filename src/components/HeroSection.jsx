@@ -13,7 +13,7 @@ const HeroSection = ({myData}) => {
                     <p className='intro-data'>Welcome to</p>
                     <h1>{name}</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, magni. Amet at nihil exercitationem alias asperiores eius. Amet, aspernatur veritatis?
+                    Everything we do is designed to rebuild self worth and independence, in order to break free from the cycle of disadvantage.
                     </p>
                     <NavLink>
                         <Button>shop now</Button>
