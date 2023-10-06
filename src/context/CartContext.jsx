@@ -5,11 +5,15 @@ import reducer from "../reducer/CartReducer";
 const CartContext = createContext();
 const getLocalCartData = ()=>{
   let localCartData = localStorage.getItem("localcart")
-  if(localCartData == []){
-    return []
-  }else{
-    return JSON.parse(localCartData)
-  }
+  // if(localCartData == []){
+  //   return []
+  // }else{
+  //   return JSON.parse(localCartData)
+  // }
+
+  const parsedData = JSON.parse(localCartData);
+  if(!Array.isArray(parsedData)) return [];
+  return parsedData;
 }
 
 const initialState = {
